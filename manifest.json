@@ -1,0 +1,16 @@
+{
+  "name": "JB-Loan-Fixer",
+  "description": "Fjerner kassekredit fra din oversigt på Jyske bank",
+  "version": "2.0",
+  "permissions": [
+    "activeTab",
+    "https://portal.jyskebank.dk/*"
+  ],  
+  "content_scripts": [
+    {
+      "matches": ["https://portal.jyskebank.dk/*"],
+      "js": ["jq.js","script.js"]
+    }
+  ],
+  "manifest_version": 2
+}
